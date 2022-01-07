@@ -1,0 +1,34 @@
+add_subdirectory(generic)
+
+if(ARGOS_BUILD_FOR_SIMULATOR OR ARGOS_BUILD_FOR STREQUAL "builderbot")
+  add_subdirectory(builderbot)
+endif(ARGOS_BUILD_FOR_SIMULATOR OR ARGOS_BUILD_FOR STREQUAL "builderbot")
+
+if(ARGOS_BUILD_FOR_SIMULATOR OR ARGOS_BUILD_FOR STREQUAL "drone")
+  add_subdirectory(drone)
+endif(ARGOS_BUILD_FOR_SIMULATOR OR ARGOS_BUILD_FOR STREQUAL "drone")
+
+if(ARGOS_BUILD_FOR_SIMULATOR OR ARGOS_BUILD_FOR STREQUAL "foot-bot")
+  add_subdirectory(foot-bot)
+endif(ARGOS_BUILD_FOR_SIMULATOR OR ARGOS_BUILD_FOR STREQUAL "foot-bot")
+
+if(ARGOS_BUILD_FOR_SIMULATOR OR ARGOS_BUILD_FOR STREQUAL "eye-bot")
+  add_subdirectory(eye-bot)
+endif(ARGOS_BUILD_FOR_SIMULATOR OR ARGOS_BUILD_FOR STREQUAL "eye-bot")
+
+if(ARGOS_BUILD_FOR_SIMULATOR OR ARGOS_BUILD_FOR STREQUAL "e-puck")
+  add_subdirectory(e-puck)
+endif(ARGOS_BUILD_FOR_SIMULATOR OR ARGOS_BUILD_FOR STREQUAL "e-puck")
+
+if(ARGOS_BUILD_FOR_SIMULATOR OR ARGOS_BUILD_FOR STREQUAL "pi-puck")
+  add_subdirectory(pi-puck)
+endif(ARGOS_BUILD_FOR_SIMULATOR OR ARGOS_BUILD_FOR STREQUAL "pi-puck")
+
+if(ARGOS_BUILD_FOR_SIMULATOR OR ARGOS_BUILD_FOR STREQUAL "spiri")
+  add_subdirectory(spiri)
+endif(ARGOS_BUILD_FOR_SIMULATOR OR ARGOS_BUILD_FOR STREQUAL "spiri")
+
+if(ARGOS_BUILD_FOR_SIMULATOR)
+  add_subdirectory(prototype)
+  add_subdirectory(block)
+endif(ARGOS_BUILD_FOR_SIMULATOR)
